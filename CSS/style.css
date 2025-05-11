@@ -40,3 +40,32 @@ body{
     border-radius: 4px;
 
 }
+
+.left {
+    width: 450px;
+    background-color: #1e2a38;
+    color: white;
+    padding: 20px;
+    margin: 0 50px 50px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    height: 350px;
+    flex-shrink: 0;
+}
+
+.left h4{
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.details span {
+    font-size: 30px;
+}
+
+.icon img {
+    max-width: 120px;
+    margin: 90px 25px 0 25px;
+}
