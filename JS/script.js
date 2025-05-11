@@ -47,7 +47,10 @@ const getWeatherDetails = (cityName, lat, lon) => {
             }
         });
 
-        
+        //clearing data after added new one
+
+        enterCity.value="";
+        weatherCardsDiv.innerHTML =""; 
 
         console.log(fiveDaysForcast);
         fiveDaysForcast.forEach(weatherItem => {
