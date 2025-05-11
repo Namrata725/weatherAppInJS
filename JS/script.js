@@ -1,5 +1,6 @@
 const SButton = document.querySelector('.SButton');
 const enterCity = document.querySelector('.enterCity');
+const weatherCardsDiv=document.querySelector('.weatherCards')
 const API_KEY = "c52ee3c2d437912f3efe2d6e6414d742";
 
 
@@ -46,12 +47,25 @@ const getWeatherDetails = (cityName, lat, lon) => {
             }
         });
 
-        console.log(fiveDaysForcast)
+        
 
+        console.log(fiveDaysForcast);
+        fiveDaysForcast.forEach(weatherItem => {
+            weatherCardsDiv.insertAdjacentHTML("beforeend", createWeatherCard(weatherItem));
+        });
     }).catch(() => {
         alert('some error occure while fetching weather forcast ');
     });
 }
 
+const createWeatherCard=(weatherItem)=>{
+    return `  <li class="card">
+                        <h3>(${weatherItem.dt_txt.split(" ")[0]})</h3>
+                        <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png" alt="Weather Icon">
+                        <h4>${(weatherItem.main.temp - 273.15).toFixed(2)}°C</h4>
+                        <h4>${weatherItem.wind.speed}M/s</h4>
+                        <h4>${weatherItem.main.humidity}%</h4>
+                    </li>`;
+}
 SButton.addEventListener('click', getData);
 
