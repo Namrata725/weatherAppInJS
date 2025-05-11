@@ -69,3 +69,75 @@ body{
     max-width: 120px;
     margin: 90px 25px 0 25px;
 }
+
+.weatherData {
+    
+    background-color: #1e2a38;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 500px;
+    margin: auto;
+}
+
+
+
+
+.daysForecast h2 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff20;
+}
+
+
+.weatherCards {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+
+.card {
+    display: table-row;
+    
+    border-radius: 0;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ffffff20;
+}
+
+
+.card > * {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.weatherCards::before > * {
+    display: table-cell;
+    padding: 10px 5px;
+}
+
+
+.card.header {
+    font-weight: bold;
+    background-color: #1e2a38;
+    color: #aaa;
+}
+
+.card.header h3,
+.card.header h4 {
+    font-size: 13px;
+    padding: 10px 5px;
+    margin: 0;
+}
