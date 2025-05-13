@@ -17,8 +17,8 @@ A simple and clean weather forecast app built with **HTML**, **CSS**, and **Java
 - [OpenWeatherMap API](https://openweathermap.org/api)
  
 
-## 🚀 Live Demo
+##  Live Demo
 
-👉 [Click here to view the app](https://namrata725.github.io/weatherAppInJS/)
+ [Click here to view the app](https://namrata725.github.io/weatherAppInJS/)
 
 ---
